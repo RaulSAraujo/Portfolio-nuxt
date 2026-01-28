@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/a11y',
     '@nuxt/content',
-    'nuxt-studio'
+    'nuxt-studio',
+    'motion-v/nuxt'
   ],
 
   devtools: {

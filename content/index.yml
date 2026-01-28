@@ -1,1 +1,60 @@
-
+title: Olá, me chamo Raul Araujo
+description: Desenvolvedor Front-end e Mobile especializado em Vue, Nuxt, JavaScript, TypeScript Transformando ideias em experiências digitais funcionais e intuitivas.
+hero:
+  links:
+    - label: Entrar em contato
+      to: https://api.whatsapp.com/send?phone=5516992161299&text=Olá!
+      color: neutral
+seo:
+  title: Raul Silva Araujo - Desenvolvedor Front-end e Mobile
+  description: Bem-vindo ao meu portfólio! Sou Raul Silva Araujo, Desenvolvedor Front-end e Mobile especializado em Vue, Nuxt, JavaScript, TypeScript
+about:
+  title: Sobre mim
+  description: Como desenvolvedor front-end com 5 anos de experiência, utilizo minha formação em Desenvolvedor multiplataforma pela Universidade Fatec Franca para criar soluções eficientes e escaláveis. Atuo com Vue, Nuxt, JavaScript, TypeScript para criar interfaces modernas e responsivas.
+experience:
+  title: Experiência Profissional
+  items:
+    - position: "Desenvolvedor Front-end"
+      date: "2021 - Presente"
+      company:
+        name: Deltatec
+        logo: "https://deltatec.com.br/wp-content/uploads/2022/06/favicon.ico"
+        url: "https://deltatec.com.br"
+        color: "#006fb7"
+faq:
+  title: Perguntas Frequentes
+  description: Aqui você pode encontrar as perguntas frequentes sobre mim e meu trabalho.
+  categories:
+    - title: Serviços
+      questions:
+        - label: Quais serviços você oferece?
+          content: |
+            Desenvolvimento front-end (Vue, Nuxt, JavaScript, TypeScript) e mobile (React Native). Crio sites, sistemas e aplicativos responsivos.
+        - label: Como é seu processo de trabalho?
+          content: |
+            Entendimento do projeto, definição do escopo, desenvolvimento e entrega. Tudo de forma direta e alinhada com você.
+        - label: Você trabalha com startups ou projetos independentes?
+          content: |
+            Sim. Atendo projetos de front-end e mobile de diversos portes. Entre em contato para conversarmos.
+    - title: Valores e Prazos
+      questions:
+        - label: Quanto custa um projeto em média?
+          content: |
+            Depende do escopo. Entre em contato que envio uma proposta.
+        - label: Quais são as condições de pagamento?
+          content: |
+            Combinamos por projeto. Geralmente entrada para começar e o restante na entrega. Aceito transferência bancária.
+        - label: Quanto tempo leva um projeto típico?
+          content: |
+            Varia com o tamanho do projeto: de algumas semanas a alguns meses. Defino o prazo após alinharmos o escopo.
+        - label: Você oferece suporte ou manutenção contínua?
+          content: |
+            Sim. Podemos combinar pacotes mensais ou por demanda.
+    - title: Sobre mim
+      questions:
+        - label: O que você mais gosta no seu trabalho?
+          content: |
+            Resolver problemas com código e ver as pessoas usando o que criei.
+        - label: Quais são seus hobbies fora do trabalho?
+          content: |
+            Sou entusiasta de games, sempre busco novidades e adoro mergulhar em diferentes universos virtuais. Além disso, sou apaixonado por café, que é meu combustível favorito para programar e me inspirar em novos desafios.

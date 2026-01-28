@@ -17,6 +17,7 @@
     "@nuxt/content": "3.11.0",
     "@nuxt/ui": "^4.4.0",
     "better-sqlite3": "^12.6.2",
+    "motion-v": "^1.10.2",
     "nuxt": "^4.3.0",
     "nuxt-studio": "1.2.0",
     "tailwindcss": "^4.1.18"
