@@ -36,6 +36,18 @@ export default defineContentConfig({
               color: z.string()
             })
           }))
+        }),
+        faq: createBaseSchema().extend({
+          categories: z.array(
+            z.object({
+              title: z.string().nonempty(),
+              questions: z.array(
+                z.object({
+                  label: z.string().nonempty(),
+                  content: z.string().nonempty()
+                })
+              )
+            }))
         })
       })
     })
