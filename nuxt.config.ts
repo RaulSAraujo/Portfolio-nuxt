@@ -29,5 +29,16 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  studio: {
+    dev: false,
+    route: '/studio',
+    repository: {
+      provider: 'github',
+      owner: 'RaulSAraujo',
+      repo: 'portfolio-nuxt',
+      branch: 'master'
+    }
   }
 })
