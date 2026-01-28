@@ -24,7 +24,19 @@ export default defineContentConfig({
         hero: z.object({
           links: z.array(createButtonSchema)
         }),
-        about: createBaseSchema()
+        about: createBaseSchema(),
+        experience: createBaseSchema().extend({
+          items: z.array(z.object({
+            date: z.date(),
+            position: z.string(),
+            company: z.object({
+              name: z.string(),
+              url: z.string(),
+              logo: z.string().editor({ input: 'icon' }),
+              color: z.string()
+            })
+          }))
+        })
       })
     })
   }

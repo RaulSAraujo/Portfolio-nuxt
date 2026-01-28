@@ -11,3 +11,13 @@ seo:
 about:
   title: Sobre mim
   description: Como desenvolvedor front-end com 5 anos de experiência, utilizo minha formação em Desenvolvedor multiplataforma pela Universidade Fatec Franca para criar soluções eficientes e escaláveis. Atuo com Vue, Nuxt, JavaScript, TypeScript para criar interfaces modernas e responsivas.
+experience:
+  title: Experiência Profissional
+  items:
+    - position: "Desenvolvedor Front-end"
+      date: "2021 - Presente"
+      company:
+        name: Deltatec
+        logo: "https://deltatec.com.br/wp-content/uploads/2022/06/favicon.ico"
+        url: "https://deltatec.com.br"
+        color: "#006fb7"

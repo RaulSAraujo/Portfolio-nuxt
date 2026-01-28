@@ -24,6 +24,7 @@ useSeoMeta({
       }"
     >
       <LandingAbout :page />
+      <LandingWorkExperience :page />
     </UPageSection>
   </UPage>
 </template>
