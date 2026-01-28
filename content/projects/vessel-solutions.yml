@@ -1,0 +1,6 @@
+title: Vessel Solutions
+description: Plataforma completa de gestão inteligente para coquetelarias que otimiza eventos, controla ingredientes e maximiza lucros. Oferece gestão completa de eventos com cálculo automático de demanda de drinks, controle de ingredientes e custos com monitoramento de preços e desperdícios, precificação inteligente para calcular custos exatos e definir margens de lucro, e relatórios detalhados de lucratividade por evento e drink. Desenvolvida para o mercado B2B, capacita bares, restaurantes e empresas de eventos a otimizar cada etapa desde a criação de receitas até a análise de lucratividade.
+image: https://media.licdn.com/dms/image/v2/D4D22AQHL_KVda07-pA/feedshare-shrink_800/B4DZu5VU0sIIAg-/0/1768340934330?e=1771459200&v=beta&t=S2w_QnqOhTP2UxEe-uSjvcnTLetgG-Da83z5TFs4TmU
+url: "https://vessel-solutions.vercel.app/"
+tags: ["Nuxt", "TypeScript", "Vuetify"]
+date: "2025"

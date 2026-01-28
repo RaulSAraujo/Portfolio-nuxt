@@ -1,0 +1,6 @@
+title: Multi Plus Streaming
+description: Site de filmes, series e livros que permita aos usuários realizarem um cadastro, adicionar suas obras favoritas em uma lista personalizada, consultar informações, marcar os assistidos/lidos e verificar em qual plataforma o mesmo estará disponivel.
+image: https://raw.githubusercontent.com/RaulSAraujo/Front_MPS_Assets/refs/heads/master/Inicio.png?token=GHSAT0AAAAAADOPC72SOGVL6HOZ5YHOYZBY2L2LXKA
+url: "https://multi-plus-streaming.vercel.app/"
+tags: ["Vue", "JavaScript", "Vuetify"]
+date: "2023"

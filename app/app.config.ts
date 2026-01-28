@@ -6,6 +6,7 @@ export default defineAppConfig({
       alt: 'Raul S. Araujo'
     },
     email: 'raul.araujo.2000@hotmail.com',
+    meetingLink: 'https://api.whatsapp.com/send?phone=5516992161299&text=Olá!',
     available: true
   },
   ui: {
