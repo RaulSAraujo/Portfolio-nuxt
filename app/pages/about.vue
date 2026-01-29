@@ -40,6 +40,7 @@ useSeoMeta({
         :alt="global.picture?.alt!"
       />
     </UPageHero>
+
     <UPageSection
       :ui="{
         container: '!pt-0'
