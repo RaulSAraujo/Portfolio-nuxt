@@ -1,4 +1,9 @@
 <script lang="ts" setup>
+import type { IndexCollectionItem } from '@nuxt/content'
+
+defineProps<{
+  page: IndexCollectionItem
+}>()
 </script>
 
 <template>
@@ -24,7 +29,7 @@
         class="max-w-screen-lg mx-auto flex items-center justify-center"
       >
         <UIcon
-          v-for="skill in skills"
+          v-for="skill in page.skills"
           :key="skill.name"
           :name="skill.icon"
           :class="`size-10 shrink-0 text-${skill.color}-500 hover:text-${skill.color}-600 hover:scale-110 transition-all duration-300`"

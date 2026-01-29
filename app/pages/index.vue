@@ -20,7 +20,7 @@ useSeoMeta({
 <template>
   <UPage v-if="page">
     <LandingHero :page />
-    <MySkills />
+    <LandingMySkills :page />
     <UPageSection
       :ui="{
         container: '!pt-0 lg:grid lg:grid-cols-2 lg:gap-8'

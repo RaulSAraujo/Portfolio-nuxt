@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+/* Safelist para cores dinâmicas dos ícones de skills (content) */
+@source "./safelist.txt";
+
 @theme static {
   --font-sans: 'Public Sans', sans-serif;
 

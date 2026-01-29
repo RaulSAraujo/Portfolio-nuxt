@@ -15,6 +15,12 @@ const createButtonSchema = () => z.object({
   target: z.enum(['_blank', '_self']).optional()
 })
 
+const createSkillSchema = () => z.object({
+  name: z.string(),
+  icon: z.string(),
+  color: z.string()
+})
+
 export default defineContentConfig({
   collections: {
     index: defineCollection({
@@ -24,6 +30,7 @@ export default defineContentConfig({
         hero: z.object({
           links: z.array(createButtonSchema())
         }),
+        skills: z.array(createSkillSchema()),
         about: createBaseSchema(),
         experience: createBaseSchema().extend({
           items: z.array(z.object({

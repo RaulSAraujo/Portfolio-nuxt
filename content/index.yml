@@ -11,6 +11,37 @@ seo:
 about:
   title: Sobre mim
   description: Como desenvolvedor front-end com 5 anos de experiência, utilizo minha formação em Desenvolvedor multiplataforma pela Universidade Fatec Franca para criar soluções eficientes e escaláveis. Atuo com Vue, Nuxt, JavaScript, TypeScript para criar interfaces modernas e responsivas.
+skills:
+  - name: HTML
+    icon: "i-simple-icons-html5"
+    color: "orange"
+  - name: CSS
+    icon: "i-simple-icons-css3"
+    color: "blue"
+  - name: Vue.js
+    icon: "i-simple-icons-vuedotjs"
+    color: "green"
+  - name: Nuxt.js
+    icon: "i-simple-icons-nuxt"
+    color: "green"
+  - name: JavaScript
+    icon: "i-simple-icons-javascript"
+    color: "yellow"
+  - name: TypeScript
+    icon: "i-simple-icons-typescript"
+    color: "blue"
+  - name: React
+    icon: "i-simple-icons-react"
+    color: "blue"
+  - name: Node.js
+    icon: "i-simple-icons-nodedotjs"
+    color: "green"
+  - name: Tailwind CSS
+    icon: "i-simple-icons-tailwindcss"
+    color: "blue"
+  - name: Vuetify
+    icon: "i-simple-icons-vuetify"
+    color: "blue"
 experience:
   title: Experiência Profissional
   items:
