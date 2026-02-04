@@ -12,6 +12,16 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true
   },
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.png' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon.png' },
+        { rel: 'apple-touch-icon', href: '/favicon.png' }
+      ]
+    }
+  },
 
   css: ['~/assets/css/main.css'],
 
