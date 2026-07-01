@@ -9,6 +9,7 @@ const createButtonSchema = () => z.object({
   label: z.string(),
   icon: z.string().optional(),
   to: z.string().optional(),
+  download: z.string().optional(),
   color: z.enum(['primary', 'neutral', 'success', 'warning', 'error', 'info']).optional(),
   size: z.enum(['xs', 'sm', 'md', 'lg', 'xl']).optional(),
   variant: z.enum(['solid', 'outline', 'subtle', 'soft', 'ghost', 'link']).optional(),
@@ -34,13 +35,13 @@ export default defineContentConfig({
         about: createBaseSchema(),
         experience: createBaseSchema().extend({
           items: z.array(z.object({
-            date: z.date(),
+            date: z.string(),
             position: z.string(),
             company: z.object({
               name: z.string(),
-              url: z.string(),
-              logo: z.string().editor({ input: 'icon' }),
-              color: z.string()
+              url: z.string().optional(),
+              logo: z.string().editor({ input: 'icon' }).optional(),
+              color: z.string().optional()
             })
           }))
         }),
@@ -73,7 +74,7 @@ export default defineContentConfig({
       schema: z.object({
         title: z.string().nonempty(),
         description: z.string().nonempty(),
-        image: z.string().nonempty().editor({ input: 'media' }),
+        image: z.string().optional().editor({ input: 'media' }),
         url: z.string().nonempty(),
         tags: z.array(z.string()),
         date: z.date()

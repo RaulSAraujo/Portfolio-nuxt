@@ -1,6 +1,6 @@
 title: Multi Plus Streaming
-description: Site de filmes, series e livros que permita aos usuários realizarem um cadastro, adicionar suas obras favoritas em uma lista personalizada, consultar informações, marcar os assistidos/lidos e verificar em qual plataforma o mesmo estará disponivel.
+description: Filmes e séries com favoritos, informações detalhadas e indicação de plataformas de streaming. Integração com TheMovieDB API.
 image: https://raw.githubusercontent.com/RaulSAraujo/Multi-Plus-Streaming/refs/heads/main/public/img/Inicio.png
 url: "https://multi-plus-streaming.vercel.app/"
-tags: ["Vue", "JavaScript", "Vuetify"]
+tags: ["Vue 3", "Vuetify", "TheMovieDB API"]
 date: "2023"

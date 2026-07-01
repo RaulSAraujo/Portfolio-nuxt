@@ -1,5 +1,13 @@
 <script lang="ts" setup>
-const { data: page } = await useAsyncData('index', () => queryCollection('index').first())
+const { data: page, error } = await useAsyncData('index', () => queryCollection('index').first())
+
+if (error.value) {
+  throw createError({
+    statusCode: 500,
+    statusMessage: 'Erro ao carregar a página',
+    fatal: true
+  })
+}
 
 if (!page.value) {
   throw createError({
@@ -9,26 +17,28 @@ if (!page.value) {
   })
 }
 
+const pageData = page.value
+
 useSeoMeta({
-  title: page.value.seo.title || page.value.title,
-  ogTitle: page.value.seo.title || page.value.title,
-  description: page.value.seo.description || page.value.description,
-  ogDescription: page.value.seo.description || page.value.description
+  title: pageData.seo.title || pageData.title,
+  ogTitle: pageData.seo.title || pageData.title,
+  description: pageData.seo.description || pageData.description,
+  ogDescription: pageData.seo.description || pageData.description
 })
 </script>
 
 <template>
-  <UPage v-if="page">
-    <LandingHero :page />
-    <LandingMySkills :page />
+  <UPage>
+    <LandingHero :page="pageData" />
+    <LandingMySkills :page="pageData" />
     <UPageSection
       :ui="{
         container: 'lg:grid lg:grid-cols-2 lg:gap-8'
       }"
     >
-      <LandingAbout :page />
-      <LandingWorkExperience :page />
+      <LandingAbout :page="pageData" />
+      <LandingWorkExperience :page="pageData" />
     </UPageSection>
-    <LandingFAQ :page />
+    <LandingFAQ :page="pageData" />
   </UPage>
 </template>

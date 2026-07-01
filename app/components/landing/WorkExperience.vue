@@ -31,6 +31,7 @@ defineProps<{
           </p>
           <USeparator />
           <ULink
+            v-if="experience.company.url"
             class="flex items-center gap-1"
             :to="experience.company.url"
             target="_blank"
@@ -40,7 +41,7 @@ defineProps<{
             </span>
             <div
               class="inline-flex items-center gap-1"
-              :style="{ color: experience.company.color }"
+              :style="experience.company.color ? { color: experience.company.color } : undefined"
             >
               <span class="font-medium">{{ experience.company.name }}</span>
               <img
@@ -55,12 +56,30 @@ defineProps<{
               />
             </div>
           </ULink>
+          <div
+            v-else
+            class="flex items-center gap-1"
+          >
+            <span class="text-sm">
+              {{ experience.position }}
+            </span>
+            <span class="text-sm font-medium text-highlighted">
+              {{ experience.company.name }}
+            </span>
+          </div>
         </Motion>
+
+        <UButton
+          to="/resume/curriculo.html"
+          target="_blank"
+          label="Ver currículo completo"
+          color="neutral"
+          variant="ghost"
+          size="sm"
+          trailing-icon="i-lucide-arrow-up-right"
+          class="mt-3 w-fit px-0"
+        />
       </div>
     </template>
   </UPageSection>
 </template>
-
-<style scoped>
-
-</style>

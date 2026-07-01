@@ -1,52 +1,76 @@
 title: Olá, me chamo Raul Araujo
-description: Desenvolvedor Front-end e Mobile especializado em Vue, Nuxt, JavaScript, TypeScript Transformando ideias em experiências digitais funcionais e intuitivas.
+description: Desenvolvedor front-end na Deltatec há mais de 6 anos. Único responsável por web e mobile, em equipe com 2 back-ends. Migração para Nuxt 4, Vue 3 e TypeScript.
 hero:
   links:
     - label: Entrar em contato
       to: https://api.whatsapp.com/send?phone=5516992161299&text=Olá!
+      target: _blank
       color: neutral
 seo:
-  title: Raul Silva Araujo - Desenvolvedor Front-end e Mobile
-  description: Bem-vindo ao meu portfólio! Sou Raul Silva Araujo, Desenvolvedor Front-end e Mobile especializado em Vue, Nuxt, JavaScript, TypeScript
+  title: Raul Silva Araujo — Desenvolvedor Front-end
+  description: Desenvolvedor Front-end · Vue.js · Nuxt · TypeScript. Franca, SP. Mais de 6 anos na Deltatec com web, mobile e automação.
 about:
   title: Sobre mim
-  description: Como desenvolvedor front-end com 5 anos de experiência, utilizo minha formação em Desenvolvedor multiplataforma pela Universidade Fatec Franca para criar soluções eficientes e escaláveis. Atuo com Vue, Nuxt, JavaScript, TypeScript para criar interfaces modernas e responsivas.
+  description: Desenvolvedor front-end na Deltatec há mais de 6 anos. Único responsável por web e mobile, em equipe com 2 back-ends. Migração para Nuxt 4, Vue 3 e TypeScript. Formação em DSM pela Fatec Franca.
 skills:
-  - name: HTML
-    icon: "i-simple-icons-html5"
-    color: "orange"
-  - name: CSS
-    icon: "i-simple-icons-css3"
-    color: "blue"
   - name: Vue.js
     icon: "i-simple-icons-vuedotjs"
     color: "green"
   - name: Nuxt.js
     icon: "i-simple-icons-nuxt"
     color: "green"
-  - name: JavaScript
-    icon: "i-simple-icons-javascript"
-    color: "yellow"
   - name: TypeScript
     icon: "i-simple-icons-typescript"
     color: "blue"
-  - name: React
-    icon: "i-simple-icons-react"
+  - name: JavaScript
+    icon: "i-simple-icons-javascript"
+    color: "yellow"
+  - name: Vuetify
+    icon: "i-simple-icons-vuetify"
+    color: "blue"
+  - name: HTML
+    icon: "i-simple-icons-html5"
+    color: "orange"
+  - name: CSS
+    icon: "i-simple-icons-css3"
+    color: "blue"
+  - name: Sass
+    icon: "i-simple-icons-sass"
+    color: "pink"
+  - name: Tailwind CSS
+    icon: "i-simple-icons-tailwindcss"
     color: "blue"
   - name: Node.js
     icon: "i-simple-icons-nodedotjs"
     color: "green"
-  - name: Tailwind CSS
-    icon: "i-simple-icons-tailwindcss"
-    color: "blue"
-  - name: Vuetify
-    icon: "i-simple-icons-vuetify"
-    color: "blue"
+  - name: Playwright
+    icon: "i-simple-icons-playwright"
+    color: "red"
+  - name: Supabase
+    icon: "i-simple-icons-supabase"
+    color: "green"
+  - name: Stripe
+    icon: "i-simple-icons-stripe"
+    color: "indigo"
+  - name: Git
+    icon: "i-simple-icons-git"
+    color: "orange"
+  - name: Vite
+    icon: "i-simple-icons-vite"
+    color: "purple"
 experience:
   title: Experiência Profissional
+  description: ""
   items:
-    - position: "Desenvolvedor Front-end"
-      date: "2021 - Presente"
+    - position: Desenvolvedor Front-end e Mobile
+      date: Abr 2021 — Presente
+      company:
+        name: Deltatec
+        logo: "https://deltatec.com.br/wp-content/uploads/2022/06/favicon.ico"
+        url: "https://deltatec.com.br"
+        color: "#006fb7"
+    - position: Suporte de Compras
+      date: Out 2019 — Abr 2021
       company:
         name: Deltatec
         logo: "https://deltatec.com.br/wp-content/uploads/2022/06/favicon.ico"
@@ -54,19 +78,19 @@ experience:
         color: "#006fb7"
 faq:
   title: Perguntas Frequentes
-  description: Aqui você pode encontrar as perguntas frequentes sobre mim e meu trabalho.
+  description: Respostas sobre serviços, prazos e como trabalho no dia a dia.
   categories:
     - title: Serviços
       questions:
         - label: Quais serviços você oferece?
           content: |
-            Desenvolvimento front-end (Vue, Nuxt, JavaScript, TypeScript) e mobile (React Native). Crio sites, sistemas e aplicativos responsivos.
+            Desenvolvimento front-end (Vue 3, Nuxt 4, TypeScript), interfaces web e mobile, integração com APIs REST e automação de processos com Playwright e VBA.
         - label: Como é seu processo de trabalho?
           content: |
             Entendimento do projeto, definição do escopo, desenvolvimento e entrega. Tudo de forma direta e alinhada com você.
         - label: Você trabalha com startups ou projetos independentes?
           content: |
-            Sim. Atendo projetos de front-end e mobile de diversos portes. Entre em contato para conversarmos.
+            Sim. Atendo projetos de front-end e automação de diversos portes. Entre em contato para conversarmos.
     - title: Valores e Prazos
       questions:
         - label: Quanto custa um projeto em média?
@@ -88,4 +112,4 @@ faq:
             Resolver problemas com código e ver as pessoas usando o que criei.
         - label: Quais são seus hobbies fora do trabalho?
           content: |
-            Sou entusiasta de games, sempre busco novidades e adoro mergulhar em diferentes universos virtuais. Além disso, sou apaixonado por café, que é meu combustível favorito para programar e me inspirar em novos desafios.
+            Sou entusiasta de games — curto Valorant, League of Legends e sou fã da saga Resident Evil. Café é meu combustível favorito para programar.

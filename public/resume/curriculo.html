@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <title>Raul Silva Araujo — Currículo</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 18mm 20mm;
+    }
+
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        margin: 0;
+      }
+
+      .resume {
+        max-width: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      section {
+        break-inside: auto;
+        page-break-inside: auto;
+      }
+
+      .entry {
+        break-inside: auto;
+        page-break-inside: auto;
+      }
+
+      .page-2-start {
+        break-before: page;
+        page-break-before: always;
+        margin-top: 0;
+        padding-top: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+
+    :root {
+      --text: #171717;
+      --text-secondary: #525252;
+      --text-muted: #737373;
+      --border: #e5e5e5;
+      --accent: #2563eb;
+      --bg: #ffffff;
+      --space-xs: 4px;
+      --space-sm: 8px;
+      --space-md: 16px;
+      --space-lg: 24px;
+      --space-xl: 32px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Inter, "Segoe UI", system-ui, -apple-system, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.55;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .resume {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: var(--space-xl) var(--space-lg);
+    }
+
+    /* Header — 3s rule: who, what, how to contact */
+    .header {
+      margin-bottom: var(--space-xl);
+      padding-bottom: var(--space-lg);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header h1 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      text-wrap: balance;
+      margin-bottom: var(--space-xs);
+    }
+
+    .header .role {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+      margin-bottom: var(--space-md);
+    }
+
+    .contact {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .contact a {
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+
+    /* Sections — scannable hierarchy */
+    section {
+      margin-bottom: var(--space-xl);
+    }
+
+    section h2 {
+      font-size: 0.68rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: var(--space-md);
+      text-wrap: balance;
+    }
+
+    .summary {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      max-width: 62ch;
+    }
+
+    /* Experience — recognition over recall: title + date pattern */
+    .entry {
+      margin-bottom: var(--space-lg);
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: var(--space-md);
+      margin-bottom: 2px;
+    }
+
+    .entry-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .entry-date {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .entry-meta {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: var(--space-sm);
+    }
+
+    .bullets {
+      padding-left: 1.1rem;
+      color: var(--text-secondary);
+    }
+
+    .bullets li {
+      margin-bottom: 3px;
+      font-size: 0.88rem;
+    }
+
+    .bullets li::marker {
+      color: var(--text-muted);
+    }
+
+    /* Projects — minimal, one glance */
+    .project {
+      margin-bottom: var(--space-md);
+    }
+
+    .project-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .project-stack {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin: 2px 0;
+    }
+
+    .project-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    /* Education — compact */
+    .edu {
+      margin-bottom: var(--space-md);
+    }
+
+    .edu-degree {
+      font-weight: 600;
+      font-size: 0.88rem;
+    }
+
+    .edu-meta {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    /* Skills — grouped, scannable */
+    .skills-grid {
+      display: grid;
+      gap: var(--space-sm);
+    }
+
+    .skill-row {
+      display: block;
+      font-size: 0.85rem;
+      margin-bottom: 6px;
+    }
+
+    .skill-label {
+      font-weight: 600;
+      color: var(--text);
+      font-size: 0.82rem;
+      display: inline;
+    }
+
+    .skill-label::after {
+      content: " — ";
+      font-weight: 400;
+      color: var(--text-muted);
+    }
+
+    .skill-value {
+      color: var(--text-secondary);
+      display: inline;
+    }
+
+    /* Certifications — condensed */
+    .certs {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    .page-2-start {
+      break-before: page;
+      page-break-before: always;
+    }
+  </style>
+</head>
+<body>
+  <main class="resume">
+    <header class="header">
+      <h1>Raul Silva Araujo</h1>
+      <p class="role">Desenvolvedor Front-end · Vue.js · Nuxt · TypeScript</p>
+      <p class="contact">
+        Franca, SP · <a href="tel:+5516992161299">+55 16 99216-1299</a> ·
+        <a href="mailto:raul.araujo.2000@hotmail.com">raul.araujo.2000@hotmail.com</a><br />
+        <a href="https://linkedin.com/in/raulsaraujo">linkedin.com/in/raulsaraujo</a> ·
+        <a href="https://github.com/RaulSAraujo">github.com/RaulSAraujo</a> ·
+        <a href="https://raul-araujo-portfolio.vercel.app">raul-araujo-portfolio.vercel.app</a>
+      </p>
+    </header>
+
+    <section aria-labelledby="resumo">
+      <h2 id="resumo">Resumo</h2>
+      <p class="summary">
+        Desenvolvedor front-end na Deltatec há mais de 6 anos. Único responsável por web e mobile,
+        em equipe com 2 back-ends. Migração para Nuxt 4, Vue 3 e TypeScript. Automação de processos
+        com Playwright e VBA.
+      </p>
+    </section>
+
+    <section aria-labelledby="experiencia">
+      <h2 id="experiencia">Experiência</h2>
+
+      <article class="entry">
+        <div class="entry-header">
+          <h3 class="entry-title">Desenvolvedor Front-end e Mobile</h3>
+          <time class="entry-date" datetime="2021-04">Abr 2021 — Presente</time>
+        </div>
+        <p class="entry-meta">Deltatec · Franca, SP</p>
+        <ul class="bullets">
+          <li>Único dev front-end; interfaces web e mobile do sistema interno.</li>
+          <li>Migração para Nuxt 4, Vue 3, Nuxt UI e TypeScript.</li>
+          <li>Integração com APIs REST; componentização e performance.</li>
+          <li>Automação de cotações (LG, Whirlpool) com Playwright, TypeScript e Fastify.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-header">
+          <h3 class="entry-title">Suporte de Compras</h3>
+          <time class="entry-date" datetime="2019-10/2021-04">Out 2019 — Abr 2021</time>
+        </div>
+        <p class="entry-meta">Deltatec · Franca, SP</p>
+        <ul class="bullets">
+          <li>Cotações e compras: Samsung, LG, Brastemp e Consul.</li>
+          <li>Automação com VBA e Excel avançado.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-header">
+          <h3 class="entry-title">Editor de Imagens</h3>
+          <time class="entry-date" datetime="2019-06/2019-10">Jun — Out 2019</time>
+        </div>
+        <p class="entry-meta">Deltatec · Franca, SP</p>
+        <ul class="bullets">
+          <li>Fotografia e edição (Photoshop) para e-commerce.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="entry-header">
+          <h3 class="entry-title">Atendimento e Vendas</h3>
+          <time class="entry-date" datetime="2017-09/2018-12">Set 2017 — Dez 2018</time>
+        </div>
+        <p class="entry-meta">Eletrônica Vila Nova · Franca, SP</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry-header">
+          <h3 class="entry-title">Aprendiz</h3>
+          <time class="entry-date" datetime="2016-09/2017-07">Set 2016 — Jul 2017</time>
+        </div>
+        <p class="entry-meta">Supermercado Gomes · Franca, SP</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="projetos" class="page-2-start">
+      <h2 id="projetos">Projetos</h2>
+
+      <article class="project">
+        <p class="project-name">Vessel Solutions</p>
+        <p class="project-stack">Nuxt 4 · Vue 3 · Supabase · Stripe · TypeScript</p>
+        <p class="project-desc">Gestão para coquetelaria: eventos, cotações e relatórios. github.com/RaulSAraujo/Vessel-solutions</p>
+      </article>
+
+      <article class="project">
+        <p class="project-name">Portfólio</p>
+        <p class="project-stack">Nuxt 4 · Nuxt UI · Nuxt Content · TypeScript</p>
+        <p class="project-desc">raul-araujo-portfolio.vercel.app</p>
+      </article>
+
+      <article class="project">
+        <p class="project-name">Multi Plus Streaming</p>
+        <p class="project-stack">Vue 3 · Vuetify · TheMovieDB API</p>
+        <p class="project-desc">Filmes e séries com favoritos. multi-plus-streaming.vercel.app</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="formacao">
+      <h2 id="formacao">Formação</h2>
+
+      <div class="edu">
+        <p class="edu-degree">DSM — Desenvolvimento de Software Multiplataforma</p>
+        <p class="edu-meta">Fatec Franca · 2021–2025</p>
+      </div>
+      <div class="edu">
+        <p class="edu-degree">Técnico em Tecnologia da Informação</p>
+        <p class="edu-meta">Senac · 2019–2021</p>
+      </div>
+      <div class="edu">
+        <p class="edu-degree">Técnico em Eletrônica</p>
+        <p class="edu-meta">ETEC Getúlio Vargas · 2017–2019</p>
+      </div>
+      <div class="edu">
+        <p class="edu-degree">Ensino Médio</p>
+        <p class="edu-meta">E.E. Hélio Palermo · 2017</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="habilidades">
+      <h2 id="habilidades">Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill-row">
+          <span class="skill-label">Front-end</span>
+          <span class="skill-value">Vue 3, Nuxt 4, Nuxt UI, TypeScript, JavaScript, Vuetify, HTML, CSS, SASS</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Automação</span>
+          <span class="skill-value">Playwright, Puppeteer, VBA, Excel</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">APIs</span>
+          <span class="skill-value">Node.js, REST, integração front-back</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Ferramentas</span>
+          <span class="skill-value">Git, GitHub, pnpm, Vite</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Idiomas</span>
+          <span class="skill-value">Português (nativo) · Inglês (básico)</span>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="certificacoes">
+      <h2 id="certificacoes">Certificações</h2>
+      <p class="certs">
+        Desenvolvedor Front-end (CPS) · MEVN Stack (Danki Code) · Vue.js (Udemy) ·
+        Design Patterns (CPS) · Computação em Nuvem (CPS) · Puppeteer (Danki Code)
+      </p>
+    </section>
+  </main>
+</body>
+</html>

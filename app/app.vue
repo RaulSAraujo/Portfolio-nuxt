@@ -25,8 +25,14 @@ useSeoMeta({
 
 <template>
   <UApp>
+    <a href="#main-content" class="skip-link">
+      Ir para o conteúdo principal
+    </a>
+
+    <NuxtLoadingIndicator color="var(--ui-primary)" />
+
     <NuxtLayout>
-      <UMain class="relative">
+      <UMain id="main-content" class="relative" tabindex="-1">
         <NuxtPage />
       </UMain>
     </NuxtLayout>

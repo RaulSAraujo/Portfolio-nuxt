@@ -1,7 +1,13 @@
 <script lang="ts" setup>
 import type { IndexCollectionItem } from '@nuxt/content'
 
-const { global, footer } = useAppConfig()
+const { global } = useAppConfig()
+const { fadeIn } = useMotionPreset()
+
+const headlineMotion = fadeIn({ delay: 0.1, duration: 0.3 })
+const titleMotion = fadeIn({ delay: 0.1, duration: 0.4 })
+const descriptionMotion = fadeIn({ delay: 0.3, duration: 0.4 })
+const linksMotion = fadeIn({ delay: 0.5, duration: 0.5 })
 
 defineProps<{
   page: IndexCollectionItem
@@ -10,6 +16,8 @@ defineProps<{
 
 <template>
   <UPageHero
+    id="contact"
+    class="scroll-mt-24 pt-14 sm:pt-16"
     :ui="{
       headline: 'flex items-center justify-center',
       title: 'text-shadow-md max-w-lg mx-auto',
@@ -17,22 +25,7 @@ defineProps<{
     }"
   >
     <template #headline>
-      <Motion
-        :initial="{
-          scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
-        }"
-        :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }"
-        :transition="{
-          duration: 0.3,
-          delay: 0.1
-        }"
-      >
+      <Motion v-bind="headlineMotion">
         <UColorModeAvatar
           class="size-18 ring ring-default ring-offset-3 ring-offset-(--ui-bg)"
           :light="global.picture?.light!"
@@ -43,80 +36,38 @@ defineProps<{
     </template>
 
     <template #title>
-      <Motion
-        :initial="{
-          scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
-        }"
-        :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }"
-        :transition="{
-          duration: 0.4,
-          delay: 0.1
-        }"
-      >
-        {{ page.title }}
+      <Motion v-bind="titleMotion">
+        <h1 class="text-balance">
+          {{ page.title }}
+        </h1>
       </Motion>
     </template>
 
     <template #description>
-      <Motion
-        :initial="{
-          scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
-        }"
-        :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }"
-        :transition="{
-          duration: 0.4,
-          delay: 0.3
-        }"
-      >
+      <Motion v-bind="descriptionMotion">
         {{ page.description }}
       </Motion>
     </template>
 
     <template #links>
-      <Motion
-        :initial="{
-          scale: 1.1,
-          opacity: 0,
-          filter: 'blur(20px)'
-        }"
-        :animate="{
-          scale: 1,
-          opacity: 1,
-          filter: 'blur(0px)'
-        }"
-        :transition="{
-          duration: 0.5,
-          delay: 0.5
-        }"
-      >
+      <Motion v-bind="linksMotion">
         <div
-          v-if="page.hero.links"
-          class="flex items-center gap-2"
+          v-if="page.hero.links?.length"
+          class="flex flex-col sm:flex-row items-center gap-2"
         >
-          <UButton v-bind="{ ...(page.hero.links?.[0] || {}) }" />
+          <UButton v-bind="{ ...(page.hero.links[0] || {}) }" />
           <UButton
             :color="global.available ? 'success' : 'error'"
             variant="ghost"
             class="gap-2"
-            :to="global.available ? `mailto:${global.email}` : ''"
+            :disabled="!global.available"
+            :to="global.available ? `mailto:${global.email}` : undefined"
             :label="global.available ? 'Disponível para novos projetos' : 'Não disponível no momento'"
           >
             <template #leading>
-              <span class="relative flex size-2">
+              <span class="relative flex size-2" aria-hidden="true">
                 <span
-                  class="absolute inline-flex size-full rounded-full opacity-75"
+                  class="absolute inline-flex size-full rounded-full opacity-75 motion-reduce-ping-none"
                   :class="global.available ? 'bg-success animate-ping' : 'bg-error'"
                 />
                 <span
@@ -128,32 +79,6 @@ defineProps<{
           </UButton>
         </div>
       </Motion>
-
-      <div class="gap-x-4 inline-flex mt-4">
-        <Motion
-          v-for="(link, index) of footer?.links"
-          :key="index"
-
-          :initial="{
-            scale: 1.1,
-            opacity: 0,
-            filter: 'blur(20px)'
-          }"
-          :animate="{
-            scale: 1,
-            opacity: 1,
-            filter: 'blur(0px)'
-          }"
-          :transition="{
-            duration: 0.6,
-            delay: 0.5 + index * 0.1
-          }"
-        >
-          <UButton
-            v-bind="{ size: 'md', color: 'neutral', variant: 'ghost', ...link }"
-          />
-        </Motion>
-      </div>
     </template>
   </UPageHero>
 </template>

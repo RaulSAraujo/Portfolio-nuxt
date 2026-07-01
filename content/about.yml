@@ -1,16 +1,25 @@
 title: Sobre mim
-description: Conheça Raul Silva Araujo, Desenvolvedor Front-End e Mobile de 25 anos, apaixonado por tecnologia e games, com 5 anos de carreira e formação em Desenvolvimento de Software Multi Plataforma.
+description: Raul Silva Araujo — Desenvolvedor Front-end em Franca, SP. Mais de 6 anos na Deltatec, formado em DSM pela Fatec Franca.
 content: |
-  Prazer em conhecer! Meu nome é **Raul Silva Araujo**, tenho 25 anos, sou casado e moro em Franca, São Paulo. Sou apaixonado por tecnologia, me considero dedicado e autodidata, sempre em busca de aprender algo novo.
+  Prazer em conhecer! Meu nome é **Raul Silva Araujo**, moro em **Franca, São Paulo** e sou desenvolvedor front-end na **Deltatec** há mais de **6 anos**.
 
-  Desde criança desmontava tudo o que via pela frente — essa curiosidade me levou a me aprofundar em **manutenção de hardware** e a realizar o **curso Técnico em TI**. Logo depois, tive meu primeiro contato com programação através do **VBA** (Visual Basic for Applications), criando automatizações em planilhas. Foi essa experiência que me motivou a entrar na faculdade de **Desenvolvimento de Software Multi Plataforma**, que curso atualmente.
+  Sou o único responsável por **web e mobile** do sistema interno, em equipe com dois back-ends. Conduzi a migração para **Nuxt 4**, **Vue 3**, **Nuxt UI** e **TypeScript**, com foco em componentização, performance e integração com APIs REST. Também desenvolvo **automação de processos** — cotações com Playwright e, antes, planilhas com VBA.
 
-  ### Carreira e atuação
+  ### Trajetória
 
-  Possuo **5 anos de carreira profissional**. Atualmente atuo como **Desenvolvedor de Aplicativos Móveis** e **Desenvolvedor Front-End** na Deltatec - Assistência Técnica, onde sou responsável pelo desenvolvimento mobile e pelo front-end do sistema interno. Trabalho com **Vue.js**, **Nuxt.js**, **JavaScript**, **TypeScript** e **React Native**, sempre em busca de código limpo e soluções que façam a diferença.
+  Minha carreira na Deltatec começou em **2016** como aprendiz em outras áreas da empresa e evoluiu por suporte de compras, edição de imagens para e-commerce e, desde **abril de 2021**, desenvolvimento front-end e mobile. Antes disso, atuei em atendimento e vendas na Eletrônica Vila Nova.
+
+  ### Formação
+
+  Cursando **DSM — Desenvolvimento de Software Multiplataforma** na Fatec Franca (2021–2025). Também tenho técnico em TI pelo Senac e técnico em Eletrônica pela ETEC Getúlio Vargas.
 
   ### Além do código
 
-  Sou **gamer** — e como todo gamer, meu passatempo preferido é jogar. Curto jogos como **Valorant**, **League of Legends** e outros. Meu jogo preferido é **Resident Evil**: sou fã da saga e não perco um lançamento.
+  Sou **gamer** — curto Valorant, League of Legends e sou fã da saga **Resident Evil**. Café é meu combustível favorito para programar.
 
-  Obrigado pela visita. Confira meus [projetos](/projects) ou [entre em contato](/#contact) se quiser conversar ou colaborar!
+  Confira meus [projetos](/projects) ou [entre em contato](/#contact) para conversar ou colaborar.
+
+  ### Currículo
+
+  - <a href="/resume/curriculo.html" target="_blank" rel="noopener noreferrer">Ver currículo online</a>
+  - <a href="/resume/curriculo.docx" target="_blank" rel="noopener noreferrer" download="curriculo-raul-araujo.docx">Baixar currículo (DOCX)</a>

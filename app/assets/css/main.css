@@ -19,3 +19,39 @@
   --color-green-900: #0A5331;
   --color-green-950: #052E16;
 }
+
+.skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+  z-index: 50;
+}
+
+.skip-link:focus {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  border-radius: 0.5rem;
+  background-color: var(--ui-bg);
+  color: var(--ui-text);
+  box-shadow: 0 0 0 2px var(--ui-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-reduce-ping-none {
+    animation: none !important;
+  }
+}

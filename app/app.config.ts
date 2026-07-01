@@ -3,7 +3,7 @@ export default defineAppConfig({
     picture: {
       dark: 'https://github.com/RaulSAraujo.png',
       light: 'https://github.com/RaulSAraujo.png',
-      alt: 'Raul S. Araujo'
+      alt: 'Raul Silva Araujo'
     },
     email: 'raul.araujo.2000@hotmail.com',
     meetingLink: 'https://api.whatsapp.com/send?phone=5516992161299&text=Olá!',
@@ -23,7 +23,7 @@ export default defineAppConfig({
     }
   },
   footer: {
-    credits: `© Raul S. Araujo ${new Date().getFullYear()}`,
+    credits: `© Raul Silva Araujo ${new Date().getFullYear()}`,
     colorMode: false,
     links: [
       {
@@ -43,6 +43,19 @@ export default defineAppConfig({
         'to': 'https://github.com/RaulSAraujo',
         'target': '_blank',
         'aria-label': 'GitHub'
+      },
+      {
+        'icon': 'i-lucide-file-text',
+        'to': '/resume/curriculo.html',
+        'target': '_blank',
+        'aria-label': 'Ver currículo'
+      },
+      {
+        'icon': 'i-lucide-download',
+        'to': '/resume/curriculo.docx',
+        'target': '_blank',
+        'download': 'curriculo-raul-araujo.docx',
+        'aria-label': 'Baixar currículo DOCX'
       }
     ]
   }
