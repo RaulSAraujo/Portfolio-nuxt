@@ -1,5 +1,5 @@
 title: Olá, me chamo Raul Araujo
-description: Desenvolvedor front-end na Deltatec há mais de 6 anos. Único responsável por web e mobile, em equipe com 2 back-ends. Migração para Nuxt 4, Vue 3 e TypeScript.
+description: Desenvolvedor front-end na Deltatec há mais de 6 anos. Atuo em web e mobile, em parceria com a equipe de back-end. Migração para Nuxt 4, Vue 3 e TypeScript.
 hero:
   links:
     - label: Entrar em contato
@@ -11,7 +11,7 @@ seo:
   description: Desenvolvedor Front-end · Vue.js · Nuxt · TypeScript. Franca, SP. Mais de 6 anos na Deltatec com web, mobile e automação.
 about:
   title: Sobre mim
-  description: Desenvolvedor front-end na Deltatec há mais de 6 anos. Único responsável por web e mobile, em equipe com 2 back-ends. Migração para Nuxt 4, Vue 3 e TypeScript. Formação em DSM pela Fatec Franca.
+  description: Desenvolvedor front-end na Deltatec há mais de 6 anos. Atuo em web e mobile, em parceria com a equipe de back-end. Migração para Nuxt 4, Vue 3 e TypeScript. Formação em DSM pela Fatec Franca.
 skills:
   - name: Vue.js
     icon: "i-simple-icons-vuedotjs"
